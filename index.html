@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú desplegable</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="nav">
+        <!-- Lista Desordenada -->
+        <ul class="list">
+            <!-- Elemento 1 -->
+            <li class="list__item">
+                <div class="list__button">
+                    <img class="list__img" src="assets/dashboard.svg">
+                    <a class="nav__link" href="#">Inicio</a>
+                </div>
+            </li>
+            <!-- Elemento 2 -->
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img class="list__img" src="assets/docs.svg">
+                    <a class="nav__link" href="#">Servicios</a>
+                    <img class="list__arrow" src="assets/arrow.svg">
+                </div>
+                <!-- Lista dentro de la lista -->
+                <ul class="list__show">
+                    <!-- Elemento 1 -->
+                    <li class="list__inside">
+                        <a class="nav__link nav__link--inside" href="#">Estoy dentro</a>
+                    </li>
+                    <!-- Elemento 2 -->
+                    <li class="list__inside">
+                        <a class="nav__link nav__link--inside" href="#">Estoy dentro</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Elemento 3 -->
+            <li class="list__item">
+                <div class="list__button">
+                    <img class="list__img" src="assets/stats.svg">
+                    <a class="nav__link" href="#">Estadisticas</a>
+                </div>
+            </li>
+            <!-- Elemento 4 -->
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img class="list__img" src="assets/bell.svg">
+                    <a class="nav__link" href="#">Notificaciones</a>
+                    <img class="list__arrow" src="assets/arrow.svg">
+                </div>
+                <!-- Lista dentro de la lista -->
+                <ul class="list__show">
+                    <!-- Elemento 1 -->
+                    <li class="list__inside">
+                        <a class="nav__link nav__link--inside" href="#">Estoy dentro</a>
+                    </li>
+                    <!-- Elemento 2 -->
+                    <li class="list__inside">
+                        <a class="nav__link nav__link--inside" href="#">Estoy dentro</a>
+                    </li>
+                    <!-- Elemento 3 -->
+                    <li class="list__inside">
+                        <a class="nav__link nav__link--inside" href="#">Estoy dentro</a>
+                    </li>
+                </ul>
+            </li>
+            <!-- Elemento 5 -->
+            <li class="list__item">
+                <div class="list__button">
+                    <img class="list__img" src="assets/message.svg">
+                    <a class="nav__link" href="#">Contacto</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
